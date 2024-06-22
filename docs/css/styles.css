@@ -163,6 +163,75 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem;
 }
+.circle {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 30%; /* Circulo completo */
+  background-color: #4a6488; /* Color oscuro que combina bien con el blanco y el azul */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fcfcfc; /* Cambia el color del texto a blanco */
+}
+
+.circle i {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.circle h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.circle p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .circle {
+    max-width: 300px;
+  }
+
+  .circle i {
+    font-size: 2.5rem;
+  }
+
+  .circle h3 {
+    font-size: 2.5rem; /* Ajuste ligero para mayor legibilidad */
+  }
+
+  .circle p {
+    font-size: 1.6rem; /* Ajuste ligero para mayor legibilidad */
+  }
+}
+
+@media (max-width: 576px) {
+  .circle {
+    max-width: 250px;
+  }
+
+  .circle i {
+    font-size: 2.2rem; /* Aumentado para mayor legibilidad */
+  }
+
+  .circle h3 {
+    font-size: 1.3rem; /* Aumentado para mayor legibilidad */
+  }
+
+  .circle p {
+    font-size: 0.85rem; /* Aumentado para mayor legibilidad */
+  }
+}
+
+
+
 
 p {
   margin-top: 0;
