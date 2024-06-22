@@ -1,178 +1,158 @@
 doctype html
 html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Cristianismo, nuestra historia y esencia
+    // Favicon
+    link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+    // Bootstrap icons
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css', rel='stylesheet', type='text/css')
+    // Font Awesome
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css', rel='stylesheet', type='text/css')
+    // Google fonts
+    link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+    // Core theme CSS (includes Bootstrap)
+    link(href='css/styles.css', rel='stylesheet')
 
-    head
+  body
+    // Navigation
+    nav.navbar.navbar-light.bg-light.static-top
+      .container
+        a.navbar-brand.text-wrap(href='#!') Descubre la esencia de nuestra fe a través de la historia. ¡Inscríbete ahora!
+        a.btn.btn-primary(href='#signup') Obtener entradas
 
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+    // Masthead
+    header.masthead
+      .container.position-relative
+        .row.justify-content-center
+          .col-xl-10
+            .text-center.text-white
+              // Page heading
+              h4.mb-5 La Primera Iglesia Bautista de León te invita a la serie de conferencias magistrales:
+        .row.justify-content-center
+          .col-xl-6
+            .text-center.text-white
+              // Page heading
+              h1.mb-5 Cristianismo: nuestra historia y esencia
+        .row.justify-content-center
+          .col-xl-6
+            .text-center.text-white
+              // Page subheading
+              h5.mb-5 "En una época donde la esencia del cristianismo se enfrenta a desafíos constantes, es vital recordar y narrar nuestra historia para suscitar el amor y la fe"— Mtro. Mario Salvatierra
 
-        title Cristianismo, nuestra historia y esencia
+    // Icons Grid
+    section.features-icons.bg-light.text-center
+      .container
+        .row
+          .col-lg-4.col-md-6.mb-4.d-flex.justify-content-center
+            .features-icons-item.circle
+              .features-icons-icon.mb-3
+                i.fas.fa-cross(style='color: #fcfcfc')
+              h3 Un Legado y Herencia de Fe
+              p.lead.mb-0 Explora los fundamentos del cristianismo desde sus inicios. Conoce los eventos y personajes que forjaron nuestra fe.
+          .col-lg-4.col-md-6.mb-4.d-flex.justify-content-center
+            .features-icons-item.circle
+              .features-icons-icon.mb-3
+                i.fas.fa-scroll(style='color: #fcfcfc')
+              h3 Una Revelación Inspirada
+              p.lead.mb-0 Descubre el origen del canon de las Escrituras y su influencia en el forjamiento del pensamiento cristiano de ayer y hoy.
+          .col-lg-4.col-md-6.mb-4.d-flex.justify-content-center
+            .features-icons-item.circle
+              .features-icons-icon.mb-3
+                i.fas.fa-shield-alt(style='color: #fcfcfc')
+              h3 Una Verdad que defender
+              p.lead.mb-0 Debemos prepararnos para defender nuestra fe e identidad. Aprendamos a dialogar con la cultura sin perder nuestra esencia.
 
-        // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+    // Image Showcases
+    section.showcase
+      .container-fluid.p-0
+        .row.g-0
+          .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/bg-showcase-1.jpg');")
+          .col-lg-6.order-lg-1.my-auto.showcase-text
+            h2 Nuestra historia...
+            p.lead.mb-0 Es la clave para entender nuestro presente y futuro. Únete a nuestras conferencias y descubre las raíces de nuestra fe y el desarrollo de un cristianismo que ha perdurado a través de los siglos.
+        .row.g-0
+          .col-lg-6.text-white.showcase-img(style="background-image: url('assets/img/bg-showcase-2.jpg');")
+          .col-lg-6.my-auto.showcase-text
+            h2 Nuestra esencia...
+            p.lead.mb-0 Se encuentra en todo aquello que hemos vivido y preservado. Acompáñanos, redescubre la identidad del cristianismo y fortalece tu espíritu con un conocimiento profundo y auténtico.
 
-        // Bootstrap icons
-        link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css', rel='stylesheet', type='text/css')
+    // Testimonials
+    section.testimonials.text-center.bg-light
+      .container
+        h2.mb-5 Conoce a nuestro conferencista:
+        .row
+          .col-lg-12
+            .testimonial-item.mx-auto.mb-5.mb-lg-0
+              img.img-fluid.rounded-circle.mb-3(src='assets/img/testimonials-2.jpg', alt='...')
+              h5 Mario Salvatierra
+              p.font-weight-light.mb-0 Licenciado en teología. Maestría en historia y pensamiento cristiano. Director de capítulos de Fe Razonable Guatemala. Estudios complementarios en Filosofía. Profesor de Cristologia, Filosofía e historia del pensamiento cristiano.
 
-        // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+    // Call to Action
+    section#signup.call-to-action.text-white.text-center
+      .container.position-relative
+        .row.justify-content-center
+          .col-xl-6
+            h2.mb-4 Regístrate ahora para asegurar tu lugar y ¡únete a nosotros en este viaje histórico y espiritual!
+            // Signup form
+            // * * * * * * * * * * * * * * *
+            // * * SB Forms Contact Form * *
+            // * * * * * * * * * * * * * * *
+            // This form is pre-integrated with SB Forms.
+            // To make this form functional, sign up at
+            // https://startbootstrap.com/solution/contact-forms
+            // to get an API token!
+            form.form-subscribe#contactFormFooter(data-sb-form-api-token='API_TOKEN')
+              // Email address input
+              .row
+                .col
+                  input#emailAddressBelow.form-control.form-control-lg(type='email' placeholder='Email Address' data-sb-validations='required,email')
+                  .invalid-feedback.text-white(data-sb-feedback='emailAddressBelow:required') Email Address is required.
+                  .invalid-feedback.text-white(data-sb-feedback='emailAddressBelow:email') Email Address Email is not valid.
+                .col-auto
+                  button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Suscríbete
+              // Submit success message
+              // This is what your users will see when the form has successfully submitted
+              #submitSuccessMessage.d-none
+                .text-center.mb-3
+                  .fw-bolder Form submission successful!
+                  p To activate this form, sign up at
+                  a.text-white(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+              // Submit error message
+              // This is what your users will see when there is an error submitting the form
+              #submitErrorMessage.d-none
+                .text-center.text-danger.mb-3 Error sending message!
 
-        // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
+    // Footer
+    footer.footer.bg-light
+      .container
+        .row
+          .col-lg-6.h-100.text-center.text-lg-start.my-auto
+            ul.list-inline.mb-2
+              li.list-inline-item
+                a(href='#!') Contacto
+              li.list-inline-item ⋅
+              li.list-inline-item
+                a(href='#!') Privacy Policy
+            p.text-muted.small.mb-4.mb-lg-0 &copy; PIB León 2024. Todos los derechos reservados.
+          .col-lg-6.h-100.text-center.text-lg-end.my-auto
+            ul.list-inline.mb-0
+              li.list-inline-item.me-4
+                a(href='#!')
+                  i.bi-facebook.fs-3
+              li.list-inline-item
+                a(href='#!')
+                  i.bi-instagram.fs-3
 
-    body
-
-        // Navigation
-        nav.navbar.navbar-light.bg-light.static-top
-            .container
-                a.navbar-brand(href='#!') "Cristianismo, nuestra historia y esencia"
-                a.btn.btn-primary(href='#signup') Obtener entradas
-
-        // Masthead
-        header.masthead
-            .container.position-relative
-                .row.justify-content-center
-                    .col-xl-6
-                        .text-center.text-white
-                            // Page heading
-                            h1.mb-5 Cristianismo, nuestra historia y esencia
-
-                            // Page subheading
-                            h4.mb-5 Un evento para conocernos más y a Él...
-
-        // Icons Grid
-        section.features-icons.bg-light.text-center
-            .container
-                .row
-                    .col-lg-4
-                        .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
-                            .features-icons-icon.d-flex
-                                i.bi-book.m-auto.text-primary
-                            h3 Contenido Bíblico
-                            p.lead.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    .col-lg-4
-                        .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
-                            .features-icons-icon.d-flex
-                                i.bi-person-raised-hand.m-auto.text-primary
-                            h3 Conferencias
-                            p.lead.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    .col-lg-4
-                        .features-icons-item.mx-auto.mb-0.mb-lg-3
-                            .features-icons-icon.d-flex
-                                i.bi-layers.m-auto.text-primary
-                            h3 Edificación
-                            p.lead.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-        // Image Showcases
-        section.showcase
-            .container-fluid.p-0
-                .row.g-0
-                    .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/bg-showcase-1.jpg');")
-                    .col-lg-6.order-lg-1.my-auto.showcase-text
-                        h2 Nuestra historia...
-                        p.lead.mb-0
-                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                .row.g-0
-                    .col-lg-6.text-white.showcase-img(style="background-image: url('assets/img/bg-showcase-2.jpg');")
-                    .col-lg-6.my-auto.showcase-text
-                        h2 Nuestra esencia...
-                        p.lead.mb-0
-                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-        // Testimonials
-        section.testimonials.text-center.bg-light
-            .container
-                h2.mb-5 Conoce a nuestro conferencista magistral:
-                .row
-                    .col-lg-12
-                        .testimonial-item.mx-auto.mb-5.mb-lg-0
-                            img.img-fluid.rounded-circle.mb-3(src='assets/img/testimonials-2.jpg', alt='...')
-                            h5 Mario Salvatierra
-                            p.font-weight-light.mb-0
-                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-        // Call to Action
-        section#signup.call-to-action.text-white.text-center
-            .container.position-relative
-                .row.justify-content-center
-                    .col-xl-6
-                        h2.mb-4 Ready to get started? Sign up now!
-                        // Signup form
-                        
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
-                        // * * * * * * * * * * * * * * *
-
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
-
-                        form.form-subscribe#contactFormFooter(data-sb-form-api-token='API_TOKEN')
-
-                            // Email address input
-                            .row
-                                .col
-                                    input#emailAddressBelow.form-control.form-control-lg(type='email' placeholder='Email Address' data-sb-validations='required,email')
-                                    .invalid-feedback.text-white(data-sb-feedback='emailAddressBelow:required')
-                                        | Email Address is required.
-                                    .invalid-feedback.text-white(data-sb-feedback='emailAddressBelow:email')
-                                        | Email Address Email is not valid.
-
-                                .col-auto
-                                    button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Submit
-
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
-
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3
-                                    .fw-bolder Form submission successful!
-                                    p To activate this form, sign up at
-                                    a.text-white(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
-
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3 Error sending message!
-
-        // Footer
-        footer.footer.bg-light
-            .container
-                .row
-                    .col-lg-6.h-100.text-center.text-lg-start.my-auto
-                        ul.list-inline.mb-2
-                            li.list-inline-item
-                                a(href='#!') Contacto
-                            li.list-inline-item ⋅
-                            li.list-inline-item
-                                a(href='#!') Privacy Policy
-                        p.text-muted.small.mb-4.mb-lg-0 &copy; PIB León 2024. Todos los derechos reservados.
-                    .col-lg-6.h-100.text-center.text-lg-end.my-auto
-                        ul.list-inline.mb-0
-                            li.list-inline-item.me-4
-                                a(href='#!')
-                                    i.bi-facebook.fs-3
-                            li.list-inline-item
-                                a(href='#!')
-                                    i.bi-instagram.fs-3
-
-        // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
-
-        // Core theme JS
-        script(src='js/scripts.js')
-
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+    // Bootstrap core JS
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+    // Core theme JS
+    script(src='js/scripts.js')
+    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+    // * *                               SB Forms JS                               * *
+    // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
+    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+    script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
