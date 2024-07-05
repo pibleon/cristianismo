@@ -57,7 +57,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Palatino Linotype, Book Antiqua, Palatino, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-family: Raleway, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -115,7 +115,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.2;
 }
 
@@ -2768,7 +2768,7 @@ textarea.form-control-lg {
 .btn {
   --bs-btn-padding-x: 1rem;
   --bs-btn-padding-y: 0.75rem;
-  --bs-btn-font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  --bs-btn-font-family: Raleway, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
@@ -5541,7 +5541,7 @@ textarea.form-control-lg {
   display: block;
   padding: var(--bs-tooltip-arrow-height);
   margin: var(--bs-tooltip-margin);
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Raleway", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5651,7 +5651,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Raleway", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10825,11 +10825,49 @@ textarea.form-control-lg {
   }
 }
 body {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Raleway", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.headers {
+  font-family: "Antonio", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+  text-shadow: black 0.08em 0.06em;
+}
+
+.bigger {
+  font-size: 2em;
+}
+
+.dates {
+  font-family: "Raleway", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 700;
+  text-transform: none;
+  font-style: normal;
+  font-size: 0.5em;
+  color: black;
+  font-weight: 600;
+  text-shadow: black 0px 0px;
 }
 
 .btn {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Raleway", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  max-height: 2.8em;
+}
+
+.click {
+  margin-top: -15%;
+  margin-left: 88%;
+  display: block;
+  max-width: 3em;
+}
+
+.icons-text {
+  font-size: 1.1em;
+  font-weight: 300;
 }
 
 .features-icons {
@@ -10849,7 +10887,7 @@ body {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/bg-two.png") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -10857,7 +10895,6 @@ header.masthead {
 header.masthead:before {
   content: "";
   position: absolute;
-  background-color: #1c375e;
   height: 100%;
   width: 100%;
   top: 0;
@@ -10895,7 +10932,7 @@ header.masthead h1, header.masthead .h1 {
   padding-bottom: 7rem;
 }
 .testimonials .testimonial-item {
-  max-width: 18rem;
+  max-width: 30rem;
 }
 .testimonials .testimonial-item img {
   max-width: 12rem;
@@ -10905,7 +10942,7 @@ header.masthead h1, header.masthead .h1 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/bg-two.png") no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -10913,7 +10950,6 @@ header.masthead h1, header.masthead .h1 {
 .call-to-action:before {
   content: "";
   position: absolute;
-  background-color: #1c375e;
   height: 100%;
   width: 100%;
   top: 0;

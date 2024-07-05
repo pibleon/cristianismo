@@ -14,57 +14,65 @@ html(lang='en')
     link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css', rel='stylesheet', type='text/css')
     // Google fonts
     link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Raleway:300,400,600,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Antonio:300,400,600,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
     // Core theme CSS (includes Bootstrap)
     link(href='css/styles.css', rel='stylesheet')
 
   body
     // Navigation
-    nav.navbar.navbar-light.bg-light.static-top
-      .container
-        a.navbar-brand.text-wrap(href='#!') Descubre la esencia de nuestra fe a través de la historia. ¡Inscríbete ahora!
-        a.btn.btn-primary(href='#signup') Obtener entradas
+    //- nav.navbar.navbar-light.bg-light.static-top
+    //-   .container
+    //-     a.navbar-brand.text-wrap(href='#!') Descubre la esencia de nuestra fe a través de la historia. ¡Inscríbete ahora!
+    //-     a.btn.btn-primary(href='#signup') Obtener entradas
 
     // Masthead
     header.masthead
       .container.position-relative
         .row.justify-content-center
           .col-xl-10
-            .text-center.text-white
+            .text-center.text-black
               // Page heading
+              img.img-fluid.mb-3(src='assets/img/pib.png', alt='PIB León', style='width: 130px')
               h4.mb-5 La Primera Iglesia Bautista de León te invita a la serie de conferencias magistrales:
         .row.justify-content-center
-          .col-xl-6
-            .text-center.text-white
+          .col-xl-8
+            .text-center.text-black
               // Page heading
-              h1.mb-5 Cristianismo: nuestra historia y esencia
+              h1.mb-5.headers.text-primary 
+                span(class='dates') Septiembre 6-8 <br>
+                span(class='bigger') Cristianismo
+                p nuestra historia y esencia 
+              a.mb-5.btn.btn-primary.rounded-pill.text-center.text-black(href='#registro') Obtenén tus entradas &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                img.img-fluid.mb-3.click(src='assets/img/click.png', alt='click')
         .row.justify-content-center
-          .col-xl-6
-            .text-center.text-white
+          .col-xl-8
+            .text-center.text-black
               // Page subheading
-              h5.mb-5 "En una época donde la esencia del cristianismo se enfrenta a desafíos constantes, es vital recordar y narrar nuestra historia para suscitar el amor y la fe"— Mtro. Mario Salvatierra
+              h6.mb-5 "En una época donde la esencia del cristianismo se enfrenta a desafíos constantes, es vital recordar y narrar nuestra historia para suscitar el amor y la fe"— Mtro. Mario Salvatierra
 
     // Icons Grid
     section.features-icons.bg-light.text-center
       .container
         .row
           .col-lg-4.col-md-6.mb-4.d-flex.justify-content-center
-            .features-icons-item.circle
-              .features-icons-icon.mb-3
-                i.fas.fa-cross(style='color: #fcfcfc')
-              h3 Un Legado y Herencia de Fe
-              p.lead.mb-0 Explora los fundamentos del cristianismo desde sus inicios. Conoce los eventos y personajes que forjaron nuestra fe.
+            .features-icons-item
+              .features-icons-icon
+                i.fas.fa-cross(style='color: #0d6efd; margin-top: 0.2em;')
+              h3(style='font-weight: 700;') Un Legado y Herencia de Fe
+              p.icons-text.mb-0 Explora los fundamentos del cristianismo desde sus inicios. Conoce los eventos y personajes que forjaron nuestra fe.
           .col-lg-4.col-md-6.mb-4.d-flex.justify-content-center
-            .features-icons-item.circle
-              .features-icons-icon.mb-3
-                i.fas.fa-scroll(style='color: #fcfcfc')
-              h3 Una Revelación Inspirada
-              p.lead.mb-0 Descubre el origen del canon de las Escrituras y su influencia en el forjamiento del pensamiento cristiano de ayer y hoy.
+            .features-icons-item
+              .features-icons-icon
+                i.fas.fa-scroll(style='color: #0d6efd; margin-top: 0.2em;')
+              h3(style='font-weight: 700;') Una Revelación Inspirada
+              p.icons-text.mb-0 Descubre el origen del canon de las Escrituras y su influencia en el forjamiento del pensamiento cristiano de ayer y hoy.
           .col-lg-4.col-md-6.mb-4.d-flex.justify-content-center
-            .features-icons-item.circle
-              .features-icons-icon.mb-3
-                i.fas.fa-shield-alt(style='color: #fcfcfc')
-              h3 Una Verdad que defender
-              p.lead.mb-0 Debemos prepararnos para defender nuestra fe e identidad. Aprendamos a dialogar con la cultura sin perder nuestra esencia.
+            .features-icons-item
+              .features-icons-icon
+                i.fas.fa-shield-alt(style='color:#0d6efd; margin-top: 0.2em;')
+              h3(style='font-weight: 700;') Una Verdad que defender
+              p.icons-text.mb-0 Debemos prepararnos para defender nuestra fe e identidad. Aprendamos a dialogar con la cultura sin perder nuestra esencia.
 
     // Image Showcases
     section.showcase
@@ -72,12 +80,12 @@ html(lang='en')
         .row.g-0
           .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/bg-showcase-1.jpg');")
           .col-lg-6.order-lg-1.my-auto.showcase-text
-            h2 Nuestra historia...
+            h1.headers.text-primary(style='font-size: 3.2em;') Nuestra historia...
             p.lead.mb-0 Es la clave para entender nuestro presente y futuro. Únete a nuestras conferencias y descubre las raíces de nuestra fe y el desarrollo de un cristianismo que ha perdurado a través de los siglos.
         .row.g-0
           .col-lg-6.text-white.showcase-img(style="background-image: url('assets/img/bg-showcase-2.jpg');")
           .col-lg-6.my-auto.showcase-text
-            h2 Nuestra esencia...
+            h1.headers.text-primary(style='font-size: 3.2em;') Nuestra esencia...
             p.lead.mb-0 Se encuentra en todo aquello que hemos vivido y preservado. Acompáñanos, redescubre la identidad del cristianismo y fortalece tu espíritu con un conocimiento profundo y auténtico.
 
     // Testimonials
@@ -86,45 +94,19 @@ html(lang='en')
         h2.mb-5 Conoce a nuestro conferencista:
         .row
           .col-lg-12
-            .testimonial-item.mx-auto.mb-5.mb-lg-0
-              img.img-fluid.rounded-circle.mb-3(src='assets/img/testimonials-2.jpg', alt='...')
-              h5 Mario Salvatierra
+            .testimonial-item.mx-auto.mb-6.mb-lg-0
+              img.img-fluid.rounded-circle.mb-3(src='assets/img/mario.png', alt='Mtro. Mario Salvatierra')
+              h2.headers.text-primary Mario Salvatierra
               p.font-weight-light.mb-0 Licenciado en teología. Maestría en historia y pensamiento cristiano. Director de capítulos de Fe Razonable Guatemala. Estudios complementarios en Filosofía. Profesor de Cristologia, Filosofía e historia del pensamiento cristiano.
 
     // Call to Action
-    section#signup.call-to-action.text-white.text-center
+    section#registro.call-to-action.text-black.text-center
       .container.position-relative
         .row.justify-content-center
           .col-xl-6
             h2.mb-4 Regístrate ahora para asegurar tu lugar y ¡únete a nosotros en este viaje histórico y espiritual!
-            // Signup form
-            // * * * * * * * * * * * * * * *
-            // * * SB Forms Contact Form * *
-            // * * * * * * * * * * * * * * *
-            // This form is pre-integrated with SB Forms.
-            // To make this form functional, sign up at
-            // https://startbootstrap.com/solution/contact-forms
-            // to get an API token!
-            form.form-subscribe#contactFormFooter(data-sb-form-api-token='API_TOKEN')
-              // Email address input
-              .row
-                .col
-                  input#emailAddressBelow.form-control.form-control-lg(type='email' placeholder='Email Address' data-sb-validations='required,email')
-                  .invalid-feedback.text-white(data-sb-feedback='emailAddressBelow:required') Email Address is required.
-                  .invalid-feedback.text-white(data-sb-feedback='emailAddressBelow:email') Email Address Email is not valid.
-                .col-auto
-                  button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Suscríbete
-              // Submit success message
-              // This is what your users will see when the form has successfully submitted
-              #submitSuccessMessage.d-none
-                .text-center.mb-3
-                  .fw-bolder Form submission successful!
-                  p To activate this form, sign up at
-                  a.text-white(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-              // Submit error message
-              // This is what your users will see when there is an error submitting the form
-              #submitErrorMessage.d-none
-                .text-center.text-danger.mb-3 Error sending message!
+            a.mb-5.btn.btn-success.rounded-pill.text-center.text-white(href='https://chat.whatsapp.com/IhmfetI8u3N5cUou4wTCdu', target='_blank') 
+              i.bi.bi-whatsapp.fs-5 &nbsp; Registro mediante WhatsApp
 
     // Footer
     footer.footer.bg-light
@@ -133,26 +115,37 @@ html(lang='en')
           .col-lg-6.h-100.text-center.text-lg-start.my-auto
             ul.list-inline.mb-2
               li.list-inline-item
-                a(href='#!') Contacto
+                a(href='https://www.facebook.com/PrimeraIglesiaBautistaDeLeonGto', target='_blank') Contacto
               li.list-inline-item ⋅
               li.list-inline-item
-                a(href='#!') Privacy Policy
+                //- Button trigger modal
+                a(href='', type='button', data-bs-toggle='modal', data-bs-target='#faq')
+                    | Preguntas Frecuentes
+                //- Modal
+                #faq.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+                    .modal-dialog.modal-lg(role='document')
+                        .modal-content
+                            .modal-header
+                                h3#exampleModalLabel.modal-title.headers.text-primary Preguntas frecuentes
+                                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+                            .modal-body
+                                ul 
+                                  li 
+                                    span(style='font-weight: 700;') ¿Cómo puedo obtener mi boleto?
+                                    <br> A través de...
+                            .modal-footer
+                                button.btn.btn-danger(type='button', data-bs-dismiss='modal', style='font-size: 1em;') Cerrar
             p.text-muted.small.mb-4.mb-lg-0 &copy; PIB León 2024. Todos los derechos reservados.
           .col-lg-6.h-100.text-center.text-lg-end.my-auto
             ul.list-inline.mb-0
               li.list-inline-item.me-4
-                a(href='#!')
+                a(href='https://www.facebook.com/PrimeraIglesiaBautistaDeLeonGto', target='_blank')
                   i.bi-facebook.fs-3
               li.list-inline-item
-                a(href='#!')
+                a(href='https://www.instagram.com/pib_leon/', target='_blank')
                   i.bi-instagram.fs-3
 
     // Bootstrap core JS
     script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
     // Core theme JS
     script(src='js/scripts.js')
-    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-    // * *                               SB Forms JS                               * *
-    // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-    script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')

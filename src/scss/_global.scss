@@ -7,7 +7,45 @@
 body {
     font-family: $font-family-base;
   }
+
+  .headers {
+    font-family: $font-family-headers;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: black .08em .06em;
+  }
+
+  .bigger {
+    font-size: 2em;
+  }
+
+  .dates {
+    font-family: $font-family-base;
+    font-size: $font-weight-bold;
+    text-transform: none;
+    font-style: normal;
+    font-size: 0.5em;
+    color: black;
+    font-weight: 600;
+    text-shadow: black 0px 0px;
+  }
   
   .btn {
     font-family: $btn-font-family;
+    font-size: 1.2em;
+    font-weight: 400;
+    max-height: 2.8em;
+  }
+
+  .click {
+    margin-top: -15%;
+    margin-left: 88%;
+    display: block;
+    max-width: 3em;
+  }
+
+  .icons-text {
+    font-size: 1.1em;
+    font-weight: 300;
   }

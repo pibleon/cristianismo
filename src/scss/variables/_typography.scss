@@ -4,9 +4,10 @@
 
 // Override Bootstrap typography variables
 
-$font-family-base: 'Palatino Linotype', 'Book Antiqua', Palatino, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-base: 'Raleway', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-headers: 'Antonio', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-$headings-font-weight: 700;
+$headings-font-weight: 400;
 
 // Añadimos la variable para los botones
-$btn-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$btn-font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
